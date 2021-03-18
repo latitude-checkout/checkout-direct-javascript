@@ -1,0 +1,40 @@
+{
+  "name": "example-store-javascript",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "debug": "NODE_OPTIONS='--inspect' next",
+    "build": "next build",
+    "start": "next start",
+    "find:unused": "next-unused"
+  },
+  "next-unused": {
+    "alias": {
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@config/*": [
+        "config/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@utils/*": [
+        "utils/*"
+      ]
+    }
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "next": "10.0.7",
+    "next-unused": "^0.0.3",
+    "qs": "^6.9.6",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3",
+    "styled-components": "^5.2.1"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "1025",
+  "customer": {
+    "firstName": "Fake",
+    "lastName": "Doe",
+    "email": "fake.doe@email.com",
+    "mobile": "+61 400 000 000"
+  },
+  "lineItems": [
+    {
+      "quantity": 2,
+      "title": "Blue Shirt",
+      "sku": "CLOTHING-34221",
+      "imageUrl": "https://someimage.com/product",
+      "unitPrice": 320.1,
+      "totalPrice": 640.2,
+      "color": "Blue",
+      "size": "L",
+      "requiresShipping": true,
+      "isGiftCard": false,
+      "tax": {
+        "amount": 10.20
+      }
+    }
+  ],
+  "shipping": {
+    "type": "express",
+    "description": "Express shipping",
+    "amount": 13.95,
+    "address": "100 Spencer Street, Melbourne, VIC, 3000",
+    "line1": "100 Spencer Street",
+    "line2": "",
+    "city": "Melbourne",
+    "state": "VIC",
+    "postCode": "3000",
+    "countryCode": "AU",
+    "phone": "+61 400 000 000"
+  },
+  "billing": {
+    "address": "200 Bridge Road, Richmond, VIC, 3121",
+    "line1": "200 Bridge Road",
+    "line2": "",
+    "city": "Richmond",
+    "state": "VIC",
+    "postCode": "3121",
+    "countryCode": "AU",
+    "phone": "+61 400 000 000"
+  },
+  "tax": {
+    "amount": 10.20
+  },
+  "discount": {
+    "amount": 0
+  },
+
+  "currency": "AUD",
+  "total": 664.35
+}
