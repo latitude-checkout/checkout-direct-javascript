@@ -2,7 +2,6 @@ import { STORE_BASE_URL, MERCHANT_ID, IS_PRODUCTION } from "./common";
 
 export default (quote) => ({
   merchantId: MERCHANT_ID,
-  merchantName: "example-store-javascript",
   isTest: !Boolean(IS_PRODUCTION),
   merchantReference: quote.id,
   amount: quote.total,
@@ -44,13 +43,10 @@ export default (quote) => ({
     quantity: item.quantity,
     unitPrice: item.unitPrice,
     amount: item.totalPrice,
-    tax: item.tax.amount,
     requiresShipping: item.requiresShipping,
     isGiftCard: item.isGiftCard,
   })),
   totalShippingAmount: quote.shipping.amount,
-  totalTaxAmount: quote.tax.amount,
-  totalDiscountAmount: quote.discount.amount,
   platformType: "direct",
   platformVersion: "0.0.1",
 });
